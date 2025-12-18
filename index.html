@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para ti</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Georgia", serif;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carta {
+            background: rgba(255,255,255,0.9);
+            max-width: 750px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            line-height: 1.8;
+            color: #4a2c2a;
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .nota {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 15px;
+        }
+
+        .firma {
+            margin-top: 40px;
+            text-align: right;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="carta" onclick="iniciarMusica()">
+    <h1>Para ti 💌</h1>
+
+    <p>
+        Esta carta fue hecha para que la leas sin prisa,
+        las veces que quieras, en cualquier momento.
+    </p>
+
+    <p>
+        Cada palabra guarda un sentimiento sincero,
+        acompañado por una melodía suave de fondo.
+    </p>
+
+    <p>
+        Gracias por tomarte el tiempo de estar aquí.
+    </p>
+
+    <div class="firma">
+        Con cariño,<br>
+        Tu nombre
+    </div>
+
+    <div class="nota">
+        (Toca la carta para activar la música 🎶)
+    </div>
+</div>
+
+<audio id="musica" loop>
+    <source src="built_at_home.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    function iniciarMusica() {
+        const audio = document.getElementById("musica");
+        audio.play();
+    }
+</script>
+
+</body>
+</html>
