@@ -2,74 +2,138 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Para ti</title>
+    <title>Lo que no supe decirte</title>
 
     <style>
         body {
             margin: 0;
             font-family: "Georgia", serif;
-            background: linear-gradient(135deg, #f6d365, #fda085);
+            background: radial-gradient(circle at top, #2b2b2b, #0f0f0f);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            color: #e0e0e0;
         }
 
         .carta {
-            background: rgba(255,255,255,0.9);
-            max-width: 750px;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            line-height: 1.8;
-            color: #4a2c2a;
+            background: rgba(0, 0, 0, 0.55);
+            max-width: 900px;
+            padding: 50px;
+            border-radius: 18px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.8);
+            line-height: 1.9;
             cursor: pointer;
+            animation: aparecer 2s ease;
+        }
+
+        @keyframes aparecer {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         h1 {
             text-align: center;
+            font-weight: normal;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            color: #cfcfcf;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .firma {
+            margin-top: 60px;
+            text-align: right;
+            font-style: italic;
+            color: #bdbdbd;
         }
 
         .nota {
             text-align: center;
             font-size: 14px;
-            color: #777;
-            margin-top: 15px;
-        }
-
-        .firma {
-            margin-top: 40px;
-            text-align: right;
-            font-style: italic;
+            margin-top: 30px;
+            color: #888;
         }
     </style>
 </head>
 <body>
 
 <div class="carta" onclick="iniciarMusica()">
-    <h1>Para ti 💌</h1>
+    <h1>Para ti, aunque duela 💔</h1>
 
     <p>
-        Esta carta fue hecha para que la leas sin prisa,
-        las veces que quieras, en cualquier momento.
+        Sabes… leí varias veces tu mensaje y sinceramente sí, me arrepiento de todo 😔.
+        Nunca pensé estar en una situación así, en donde ya no quieres estar conmigo.
+        Duele… duele mucho, porque sé que yo causé gran parte de esto.
     </p>
 
     <p>
-        Cada palabra guarda un sentimiento sincero,
-        acompañado por una melodía suave de fondo.
+        Intenté arreglarlo de muchas formas, pero siento que nada sirvió.
+        Fallé en varias ocasiones, lo sé… pero también intenté mejorar,
+        no solo para buscar un perdón, sino para crear algo nuevo 🌑,
+        algo distinto, algo más bonito, aunque ya no pudiéramos volver a ser lo de antes.
     </p>
 
     <p>
-        Gracias por tomarte el tiempo de estar aquí.
+        Yo quería cuidarte… en silencio.
+        Cuidarte cuando caminábamos y te mantenía lejos de la calle,
+        cuando no comías y me preocupaba,
+        cuando estabas cansada en el bus y te decía que descanses sobre mí 🖤.
+        Yo prefería no dormir, con tal de verte tranquila.
+    </p>
+
+    <p>
+        Recuerdo aquella vez que llovió tanto y aun así fui a verte.
+        No me importó mojarme, no me importó nada,
+        solo quería estar ahí, contigo ☔.
+    </p>
+
+    <p>
+        Te amé de muchas formas…
+        En detalles pequeños, en silencios,
+        en aprender lo que te gustaba y lo que te dolía 💭.
+        Te amé incluso cuando yo también estaba roto.
+    </p>
+
+    <p>
+        Me duele aceptar que tal vez esto no vuelva,
+        que todo lo que quise construir se haya quedado a medio camino.
+        Me duele saber que mis errores pesan más que mis intentos 😞.
+    </p>
+
+    <p>
+        Aun así, todo lo que viví contigo fue real.
+        Cada risa, cada abrazo, cada atardecer,
+        cada momento en el bus, cada espera,
+        cada “te amo” que salió desde lo más profundo de mí 🌒.
+    </p>
+
+    <p>
+        Hoy me siento perdido, vacío,
+        con el corazón cansado y el alma en pedazos.
+        No sé qué hacer sin ti,
+        no sé cómo seguir,
+        no sé cómo soltar lo que aún amo 💔.
+    </p>
+
+    <p>
+        Si estas palabras no cambian nada,
+        al menos quiero que sepas esto:
+        te amé de verdad,
+        y una parte de mí siempre lo hará.
     </p>
 
     <div class="firma">
-        Con cariño,<br>
-        Tu nombre
+        Con todo lo que fui,<br>
+        y con todo lo que aún siento…
     </div>
 
     <div class="nota">
-        (Toca la carta para activar la música 🎶)
+        (Toca la carta para que la música empiece 🎶)
     </div>
 </div>
 
