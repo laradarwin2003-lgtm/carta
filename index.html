@@ -21,14 +21,22 @@ body {
     min-height: 100vh;
     font-family: 'Georgia', serif;
     background-image:
-        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
-        url("fondo.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    linear-gradient(
+        to right,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.9)
+    ),
+    url("fondo.jpg");
+
+    background-size: auto 100%;
+    background-repeat: repeat-x;
     background-position: center;
     background-color: #0d0d0d;
     color: #e6e6e6;
 }
+
 
 
 #inicio {
@@ -52,15 +60,12 @@ body {
     background: rgba(255,255,255,0.1);
 }
 
-#carta {
-    display: none;
-    max-width: 900px;
-    margin: auto;
-    padding: 60px 30px;
-    line-height: 1.8;
-    font-size: 18px;
-    white-space: pre-wrap;
+.carta {
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
+
 </style>
 </head>
 
